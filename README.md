@@ -1,6 +1,8 @@
-# Quotesophy
+<h1>Quote<span style="color:gold">sophy<span></h1>
+<marquee behavior="alternate"><span style="font-size:120%">Welcome to Quotesophy! Inspiring a generation</span> </marquee>
 
-##### By Kevin Malomba
+### By Kevin Malomba
+-------
 ### Quotesophy is web-application that lets user create quotes and rank the quotes on the site. 
 ### Front-end developer
 
