@@ -1,0 +1,12 @@
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid">
+    
+        <p *ngFor="let quote of quotes">
+           <span class="card"> <span class="quotes">{{quote.quoteText}}
+            <app-quote-details [quote]='quote'></app-quote-details>
+        </span>
+        </span>
+        </p>
+
+
+</div>

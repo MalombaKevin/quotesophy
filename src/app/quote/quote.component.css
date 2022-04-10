@@ -1,0 +1,14 @@
+*{
+    margin-top:2rem;
+}
+.card{
+    width:30%;
+}
+.quotes{
+    padding-top: 0;
+    padding-left:1rem;
+    padding-right: 1rem;
+    cursor:progress;
+
+    
+}
