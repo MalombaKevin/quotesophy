@@ -40,7 +40,7 @@
 #### Twitter Profile
 [kmalomba](https://twitter.com/kmalomba)
 
-[Go Back to the top](#YourAKanName)
+[Go Back to the top](#Quotesophy)
 
 
 
