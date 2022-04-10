@@ -12,7 +12,7 @@
 + [Access](#Access)
 + [Requirements](#requirements)
 + [Technology Used](#Technology-Used)
-+ [Authors Info](#author-Info)
++ [Authors Info](#Author-Info)
 
 ### Quotesophy site link
 + [www.quotesophy.com](#quotesophy)
