@@ -1,5 +1,5 @@
 <h1>Quote<span style="color:gold">sophy<span></h1>
-<marquee behavior="alternate"><span style="font-size:120%">Welcome to Quotesophy! Inspiring a generation</span> </marquee>
+<marquee behavior="alternate"><span style="font-size:120%">Welcome to Quotesophy! Inspiring a generation!</span> </marquee>
 
 ### By Kevin Malomba
 -------
@@ -12,7 +12,7 @@
 + [Access](#Access)
 + [Requirements](#requirements)
 + [Technology Used](#Technology-Used)
-+ [Authors Info](#Author-Info)
++ [Authors Info](#Authors-Info)
 
 ### Quotesophy site link
 + [www.quotesophy.com](#quotesophy)
