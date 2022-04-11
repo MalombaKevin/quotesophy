@@ -1,6 +1,13 @@
+// export class Quote {
+//     quoteTheme!:string
+//     quoteText!:string;
+//     quoteAuthor!:string;
+//     quoteSubmittedBy!:string;
+// }
+
 export class Quote {
-    quoteTheme!:string
-    quoteText!:string;
-    quoteAuthor!:string;
-    quoteSubmittedBy!:string;
+    showQuoteDetails!:boolean;
+    constructor(public quoteTheme:string, public quoteText:string, public quoteAuthor:string, public quoteSubmittedBy:string){
+        this.showQuoteDetails=true;
+    }
 }

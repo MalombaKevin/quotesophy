@@ -7,13 +7,45 @@
     margin-left:15%;
     
 }
+.card-header button i{
+    color:black;
+}
 
+.card-header {
+    display:flex;
+    justify-content: space-around;
+    
+}
+.theme{
+    flex-grow:2;
+}
 .quotes{
     padding-top: 0;
     cursor:progress;
     text-align:center;
+  }
+i{
+    color:red;
+    font-size:140%;
+    background-color: transparent;
     
-    
+}
+.dislike  i{
+    color:grey;
+    font-size:140%;
+    background-color: transparent;
 
+}
+.like i{
+    color:blue;
+    font-size:140%;
+    background-color: transparent;
+}
+button{
+    border:none;
     
+}
+.card-footer{
+    display:flex;
+    justify-content: space-around;
 }
