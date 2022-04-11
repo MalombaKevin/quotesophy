@@ -34,12 +34,12 @@
                        <div class="card-header"><span class="theme">Theme: {{quote.quoteTheme}}</span>  <button (click)='toggleDetails(i)' title="Resize"><i class="fa-regular fa-window-maximize"></i></button><br>
                        </div>
                        <div class="card-body">
-                                               <app-quote-details *ngIf='quote.showQuoteDetails' [quote]='quote'> </app-quote-details>
+                                               <app-quote-details *ngIf='quote.showQuoteDetails' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'> </app-quote-details>
                     </div>
                     <div class="card-footer"> 
                         <button title="Like Quote" class="like"><i class="fa-solid fa-thumbs-up"></i></button>
                         <button title=" Dislike Quote" class="dislike"><i class="fa-solid fa-thumbs-down"></i></button>
-                        <button title="delete quote"><i class="fa-solid fa-trash"></i></button >
+                        <button (click)= 'quoteDelete(true)' title="delete quote"><i class="fa-solid fa-trash"></i></button >
                             </div>
                     
             </span>
@@ -48,7 +48,7 @@
         </div>
         <div class="col-md-6">
     
-            <app-quote-form></app-quote-form>
+            <app-quote-form  (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>
         </div>
         

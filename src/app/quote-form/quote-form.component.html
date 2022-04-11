@@ -2,33 +2,43 @@
 <marquee behavior="alternate"><span style="font-size:1.5rem">Inspiring A Generation</span></marquee><br><br>
 <div class="form">
     
-<form>
+<form (ngSubmit)='submitQuote()' #quoteForm='ngForm'> 
     <div class="form-group">
 
-        <label for="name">Quote Theme</label>
-        <input type="text" required class="form-control" id="name" placeholder="eg.Hope">
-
+        <label for="quoteTheme">Quote Theme</label>
+        <input type="text" required class="form-control" id="quoteTheme" [(ngModel)]="newQuote.quoteTheme" name="quoteTheme" #quoteTheme="ngModel" placeholder="eg.Hope">
+        <div [hidden]="quoteTheme.valid || quoteTheme.pristine" class="alert alert-danger">
+        <p>What is the theme of your quote?</p>
+      </div>
     </div>
+
+<!-- {{newQuote.quoteTheme}} -->
     <div class="form-group">
 
-        <label for="description">The Quote</label>
-        <textarea class="form-control" id="description" rows="4" required placeholder="eg.Yes we can"></textarea>
-
+        <label for="quoteText">The Quote</label>
+        <textarea class="form-control" id="quoteText" [(ngModel)]="newQuote.quoteText" #quoteText="ngModel"  name="quoteText"rows="4" required placeholder="eg.Yes we can"></textarea>
+        <div [hidden]="quoteText.valid || quoteText.pristine" class="alert alert-danger">
+            <p>Type your quote.</p>
+          </div>
     </div>
     
     <div class="form-group">
 
-        <label for="name">The quote is by</label>
-        <input type="text" required class="form-control" id="name" placeholder="eg.Barrack Obama -Former USA President">
-
+        <label for="quoteAuthor">The quote is by</label>
+        <input type="text" required class="form-control" id="quoteAuthor" [(ngModel)]="newQuote.quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" placeholder="eg.Barrack Obama -Former USA President">
+        <div [hidden]="quoteAuthor.valid || quoteAuthor.pristine" class="alert alert-danger">
+            <p>Who said or wrote the words in the quote?</p>
+          </div>
     </div>
 
     <div class="form-group">
 
-        <label for="name">Submitted By</label>
-        <input type="text" required class="form-control" id="name" placeholder="eg.Kevin Malomba">
-
+        <label for="quoteSubmittedBy">Submitted By</label>
+        <input type="text" required class="form-control" id="quoteSubmittedBy"  [(ngModel)]="newQuote.quoteSubmittedBy" name="quoteSubmittedBy" #quoteSubmittedBy="ngModel"placeholder="eg.Kevin Malomba">
+        <div [hidden]="quoteSubmittedBy.valid || quoteSubmittedBy.pristine" class="alert alert-danger">
+            <p>Your name is?</p>
+          </div>
     </div>
-    <button type="submit" class="btn btn-success">Add Quote</button>
+    <button type="submit" class="btn btn-primary">Add Quote</button>
 </form>
 </div>

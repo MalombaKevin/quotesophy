@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
 import { Quote } from '../quote';
 
@@ -23,9 +23,36 @@ export class QuoteComponent implements OnInit {
   toggleDetails(index:any){
     this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
   }
+ 
+  @Input() quote!: Quote;
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  quoteDelete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
+  deleteQuote(isComplete:any, index:any){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quoteText}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
+  addNewQuote(quote:any){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    // .completeDate = new Date(goal.completeDate)
+    this.quotes.push(quote)
+  }
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+function emit(complete: boolean) {
+  throw new Error('Function not implemented.');
+}
+
