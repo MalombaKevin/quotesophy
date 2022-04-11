@@ -3,8 +3,13 @@
     <div class="row">
         <div class="col-md-6">
         <p *ngFor="let quote of quotes">
-           <span class="card"> <span class="quotes">"{{quote.quoteText}}"
-            <app-quote-details [quote]='quote'></app-quote-details>
+           <span class="card"> 
+               <span class="quotes"> 
+                   <div class="card-header">Theme: {{quote.quoteTheme}}</div>
+                   <div class="card-body">
+                    <app-quote-details [quote]='quote'></app-quote-details>
+                </div>
+                <div class="card-footer"></div>
         </span>
         </span>
         </p>
