@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-6">
         <p *ngFor="let quote of quotes">
-           <span class="card"> <span class="quotes">{{quote.quoteText}}
+           <span class="card"> <span class="quotes">"{{quote.quoteText}}"
             <app-quote-details [quote]='quote'></app-quote-details>
         </span>
         </span>
@@ -13,6 +13,10 @@
         <app-quote-form></app-quote-form>
     </div>
     </div>
+    
+
+      
+    
 
 
 </div>
