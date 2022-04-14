@@ -40,13 +40,16 @@ export class QuoteComponent implements OnInit {
   //   }
   // }
   upvote(i:number) {
+    alert('(:')
     this.quotes[i].upVote += 1;
-    console.log(this.upvote)
+    
   }
   downvote(i:number) {
+    alert('):')
     this.quotes[i].downVote += 1;
   }
   quoteDelete(i:number){
+    alert("Dear Quotesopher,You are now deleting the quote!")
     this.quotes.splice(i,1)
 
   }
