@@ -15,34 +15,45 @@ export class QuoteComponent implements OnInit {
   //   {quoteTheme: 'Hope', quoteText:'Yes We can', quoteAuthor:'Barrack Obama', quoteSubmittedBy:'William Malomba' }
   // ]
 
-  quotes:Quote[]=[
-    new Quote('Hope', 'Yes We can', 'Barrack Obama','Kevin Malomba'),
-    new Quote('World Peace','Do you want world peace? Go home and love your family!','Mother Teresa','William Malomba')
+  quotes: Quote[] = [
+    new Quote('Hope', 'Yes We can', 'Barrack Obama', 'Kevin Malomba', 0, 0, new Date(2019, 10, 5)),
+    new Quote('World Peace', 'Do you want world peace? Go home and love your family!', 'Mother Teresa', 'William Malomba', 0, 0, new Date(2019, 10, 5))
   ]
 
-  toggleDetails(index:any){
+  toggleDetails(index: any) {
     this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
   }
- 
+
   @Input() quote!: Quote;
-  @Output() isComplete = new EventEmitter<boolean>();
+  // @Output() isComplete = new EventEmitter<boolean>();
 
-  quoteDelete(complete:boolean){
-    this.isComplete.emit(complete);
+  // quoteDelete(complete: boolean) {
+  //   this.isComplete.emit(complete);
+  // }
+  // deleteQuote(isComplete: any, index: any) {
+  //   if (isComplete) {
+  //     let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quoteText}?`)
+
+  //     if (toDelete) {
+  //       this.quotes.splice(index, 1)
+  //     }
+  //   }
+  // }
+  upvote(i:number) {
+    this.quotes[i].upVote += 1;
+    console.log(this.upvote)
   }
-  deleteQuote(isComplete:any, index:any){
-    if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quoteText}?`)
+  downvote(i:number) {
+    this.quotes[i].downVote += 1;
+  }
+  quoteDelete(i:number){
+    this.quotes.splice(i,1)
 
-      if (toDelete){
-        this.quotes.splice(index,1)
-      }
-    }
   }
 
-  addNewQuote(quote:any){
+  addNewQuote(quote: any) {
     let quoteLength = this.quotes.length;
-    quote.id = quoteLength+1;
+    quote.id = quoteLength + 1;
     // .completeDate = new Date(goal.completeDate)
     this.quotes.push(quote)
   }
