@@ -1,0 +1,13 @@
+a:hover{
+    color:goldenrod;
+
+}
+a{
+    cursor:progress;
+}
+abbr{
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5rem;
+    
+}

@@ -16,7 +16,7 @@ export class QuoteComponent implements OnInit {
   // ]
 
   quotes: Quote[] = [
-    new Quote('Hope', 'Yes We can', 'Barrack Obama', 'Kevin Malomba', 0, 0, new Date(2019, 10, 5)),
+    new Quote('Imagination', "Imagination is Everything. It is the preview of life's coming attraction", 'Albert Einstein', 'Kevin Malomba', 0, 0, new Date(2010, 10, 5)),
     new Quote('World Peace', 'Do you want world peace? Go home and love your family!', 'Mother Teresa', 'William Malomba', 0, 0, new Date(2019, 10, 5))
   ]
 

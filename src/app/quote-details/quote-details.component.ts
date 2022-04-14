@@ -8,6 +8,12 @@ import { Quote } from '../quote';
 })
 export class QuoteDetailsComponent implements OnInit {
   @Input() quote!:Quote;
+  
+  postedTimeDifference(timePosted:any){
+    let currentTime:any = new Date();
+    return (Math.floor((currentTime-timePosted)/1000/31336000));
+
+  }
 
   constructor() { }
 
