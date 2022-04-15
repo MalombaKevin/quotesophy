@@ -49,3 +49,8 @@ button{
     display:flex;
     justify-content: space-around;
 }
+
+.fa-face-grin-stars{
+    /* margin-right:30%; */
+    color:blue;
+}

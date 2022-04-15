@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
 import { Quote } from '../quote';
 
+
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -16,8 +17,8 @@ export class QuoteComponent implements OnInit {
   // ]
 
   quotes: Quote[] = [
-    new Quote('Imagination', "Imagination is Everything. It is the preview of life's coming attraction", 'Albert Einstein', 'Kevin Malomba', 0, 0, new Date(2010, 10, 5)),
-    new Quote('World Peace', 'Do you want world peace? Go home and love your family!', 'Mother Teresa', 'William Malomba', 0, 0, new Date(2019, 10, 5))
+    new Quote('Imagination', "Imagination is Everything. It is the preview of life's coming attraction", 'Albert Einstein', 'Kevin Malomba', 0, 0, new Date(1987, 5, 16)),
+    new Quote('World Peace', 'Do you want world peace? Go home and love your family!', 'Mother Teresa', 'William Malomba', 0, 0, new Date(2019, 0, 13))
   ]
 
   toggleDetails(index: any) {
@@ -55,11 +56,28 @@ export class QuoteComponent implements OnInit {
   }
 
   addNewQuote(quote: any) {
+    alert("Thank You for inspiring the world.")
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
     // .completeDate = new Date(goal.completeDate)
     this.quotes.push(quote)
   }
+  mostLikes!:number
+  leastLikes!:number
+  count!:number
+  highest(){
+    this.mostLikes=0;
+    this.leastLikes=0;
+    for(this.count=0;this.count<this.quotes.length;this.count++){
+      this.leastLikes=(this.quotes[this.count].upVote);
+      if(this.leastLikes>this.mostLikes){
+        this.mostLikes=this.leastLikes
+      }
+      
+    }
+    return this.mostLikes;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
