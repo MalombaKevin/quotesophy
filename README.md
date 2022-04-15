@@ -15,7 +15,7 @@ Welcome to Quotesophy! Inspiring a generation!
 + [Authors Info](#Authors-Info)
 
 ### Quotesophy site link
-+ [www.quotesophy.com](#quotesophy)
++ [www.quotesophy.com](#https://malombakevin.github.io/quotesophy/)
 
 
 ## Description
