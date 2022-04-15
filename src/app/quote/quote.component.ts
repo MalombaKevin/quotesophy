@@ -17,8 +17,8 @@ export class QuoteComponent implements OnInit {
   // ]
 
   quotes: Quote[] = [
-    new Quote('Imagination', "Imagination is Everything. It is the preview of life's coming attraction", 'Albert Einstein', 'Kevin Malomba', 0, 0, new Date(1987, 5, 16)),
-    new Quote('World Peace', 'Do you want world peace? Go home and love your family!', 'Mother Teresa', 'William Malomba', 0, 0, new Date(2019, 0, 13))
+    new Quote('Imagination', "Imagination is Everything. It is the preview of life's coming attraction", 'Albert Einstein', 'Kevin Malomba Snr.', 0, 0, new Date(2007, 5, 16)),
+    new Quote('World Peace', 'Do you want world peace? Go home and love your family!', 'Mother Teresa', 'Kevin Malomba Jnr.', 0, 0, new Date(2017, 0, 13))
   ]
 
   toggleDetails(index: any) {
