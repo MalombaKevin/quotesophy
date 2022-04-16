@@ -1,3 +1,5 @@
+ ![](../quotesophy/src/assets/Quotesophy%20.png)
+
 ### Quote<span style="color:gold">sophy<span>
 Welcome to Quotesophy! Inspiring a generation!
 
@@ -6,6 +8,10 @@ Welcome to Quotesophy! Inspiring a generation!
 ### Quotesophy is web-application that lets user create quotes and rank the quotes on the site. 
 
  <button class="button" style="background-color:blue;border:1px blue; border-radius:31rem "> <a href="https://docs.google.com/forms/d/e/1FAIpQLScCdlMvG9T111jE5NeI1H8EthpzIctBJWrpM7wrU0jk_QjOmQ/viewform" style="color:white"> Contact Us </a> </button>
+ <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScCdlMvG9T111jE5NeI1H8EthpzIctBJWrpM7wrU0jk_QjOmQ/viewform" class="button"></a>
+<input class="button" type="submit" value="Post comment (input)">
+<button class="button" type="submit">Post comment (button)</button> -->
+
 -------
 
 ## Table of Content
