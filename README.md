@@ -1,4 +1,4 @@
- <img src="src/Quotesophy .png">
+ <img src="src/Quotesophy.png">
 
 ### Quote<span style="color:gold">sophy<span>
 Welcome to Quotesophy! Inspiring a generation!
