@@ -1,4 +1,4 @@
- ![](/../quotesophy/src/assets/Quotesophy%20.png)
+ <img src="src/Quotesophy .png">
 
 ### Quote<span style="color:gold">sophy<span>
 Welcome to Quotesophy! Inspiring a generation!
